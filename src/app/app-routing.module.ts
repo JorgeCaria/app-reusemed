@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'geolocalizacion1',
+    loadChildren: () => import('./pages/geolocalizacion1/geolocalizacion1.module').then( m => m.Geolocalizacion1PageModule)
+  },
 ];
 
 @NgModule({
